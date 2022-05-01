@@ -5,7 +5,7 @@ package com.payment.dao;
 
 import com.payment.model.PaymentDaoRequest;
 import com.payment.model.PaymentDaoResponse;
-import org.springframework.stereotype.Component
+import org.springframework.stereotype.Component;
 /**
  * @author sreenu,08-Apr-2022
  * Description :
