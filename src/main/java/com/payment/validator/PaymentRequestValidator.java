@@ -4,11 +4,13 @@
 package com.payment.validator;
 
 import com.payment.model.PaymentRequest;
+import org.springframework.stereotype.Component;
 
 /**
  * @author sreenu,09-Apr-2022
  * Description :
  */
+ @Component
 public class PaymentRequestValidator {
 	
 	
