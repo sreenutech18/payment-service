@@ -1,0 +1,27 @@
+{
+  "customerDetails" : 
+  
+	[ 
+	
+	{
+		"customername" : "sreenu",
+		"cardnumber" : "05211178911",
+		"cvvnum" : "123",
+		"expdate" : "12-2022",
+		"mobilnumber" : null,
+		"amount" : "1000",
+		"billdate" : "09-04-2022"
+  }, 
+  
+  {
+		"customername" : "sreenu",
+		"cardnumber" : "05211178911",
+		"cvvnum" : "123",
+		"expdate" : "12-2022",
+		"mobilnumber" : null,
+		"amount" : "1000",
+		"billdate" : "09-04-2022"
+  } 
+  
+  ]
+}
