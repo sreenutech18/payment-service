@@ -15,6 +15,12 @@ public class BusinessException extends Exception{
 	private String respCode;
 	private String respMsg;
 	
+	public BusinessException(){
+
+			
+	}
+	
+	
 	public BusinessException(String respCode, String respMsg) {
 		
 		this.respCode = respCode;
