@@ -14,10 +14,12 @@ public class BusinessException extends Exception{
 	
 	private String respCode;
 	private String respMsg;
+	private String errorCode;
 	
-	public BusinessException(String respCode, String respMsg) {
+	public BusinessException(String respCode, String respMsg,String errorCode) {
 		
 		this.respCode = respCode;
 		this.respMsg  = respMsg;
+		this.errorCode = errorCode;
 	}
 }	
