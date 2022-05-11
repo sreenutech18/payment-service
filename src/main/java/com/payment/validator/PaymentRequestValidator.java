@@ -19,6 +19,11 @@ public class PaymentRequestValidator {
 		//todo : validate the all the mandatory request elements, if any of the element is invalid then 
 		//thorw the userdefined exception
 		
+		if(paymentRequest.getClientId() ==null || " ".equals(paymentRequest.getClientId) ){
+			
+		throw new PaymentServiceException("ps002", "invlaid client id");	
+		}	
+		
 	}
 
 }
