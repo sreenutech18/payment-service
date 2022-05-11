@@ -29,11 +29,12 @@ public class PaymentRequestValidator {
 			throw new PaymentServiceException("ps002", "invalid cardnumber");
 		}		
 		
+
 		if(paymentRequest.getClientId() ==null || " ".equals(paymentRequest.getClientId) ){
 			
 		throw new PaymentServiceException("ps002", "invlaid client id");	
 		}	
-		
+
 	}
 
 }
