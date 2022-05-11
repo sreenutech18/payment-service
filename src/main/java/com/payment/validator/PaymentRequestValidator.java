@@ -19,6 +19,16 @@ public class PaymentRequestValidator {
 		//todo : validate the all the mandatory request elements, if any of the element is invalid then 
 		//thorw the userdefined exception
 		
+		if(paymentRequest != null ){
+		
+			throw new PaymentServiceException("ps001", "invalid request object");
+		}
+
+		 if(paymentRequest.getCardNumber() != null ){
+		
+			throw new PaymentServiceException("ps002", "invalid cardnumber");
+		}		
+		
 	}
 
 }
