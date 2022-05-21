@@ -42,6 +42,20 @@
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
+	
+	<distributionManagement>
+           <repository>
+			<id>deployment</id>
+			<name>internal  release</name>
+			<url>http://localhost:8081/repository/example-relase/</url>
+		</repository>
+		<snapshotRepository>
+			<id>deployment</id>
+			<name>internal snapshot release</name>
+			<url>http://localhost:8081/repository/example-snapshot/</url>
+		</snapshotRepository>
+	</distributionManagement>
+
 
 	<build>
 		<plugins>
