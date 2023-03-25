@@ -3,8 +3,10 @@
  */
 package com.payment.validator;
 
-import com.payment.model.PaymentRequest;
 import org.springframework.stereotype.Component;
+
+import com.payment.exception.PaymentRequestInvalidException;
+import com.payment.model.PaymentRequest;
 
 /**
  * @author sreenu,09-Apr-2022
@@ -14,25 +16,22 @@ import org.springframework.stereotype.Component;
 public class PaymentRequestValidator {
 	
 	
-	public void validateRequest(PaymentRequest paymentRequest) {
+	public void validateRequest(PaymentRequest paymentRequest) throws PaymentRequestInvalidException {
 		
 		//todo : validate the all the mandatory request elements, if any of the element is invalid then 
 		//thorw the userdefined exception
 		
 		if(paymentRequest != null ){
 		
-			throw new PaymentServiceException("ps001", "invalid request object");
+			throw new PaymentRequestInvalidException("ps001", "invalid request object");
 		}
 
-		 if(paymentRequest.getCardNumber() != null || " ".equals(paymentRequest.getCardNumber()) ){
+		 if(paymentRequest.getCustomerDetails().getCardnumber() != null || " ".equals(paymentRequest.getCustomerDetails().getCardnumber()) ){
 		
-			throw new PaymentServiceException("ps002", "invalid cardnumber");
+			throw new PaymentRequestInvalidException("ps002", "invalid cardnumber");
 		}		
 
-		if(paymentRequest.getClientId() ==null || " ".equals(paymentRequest.getClientId) ){
 			
-		throw new PaymentServiceException("ps002", "invlaid client id");	
-		}	
 
 
 	}

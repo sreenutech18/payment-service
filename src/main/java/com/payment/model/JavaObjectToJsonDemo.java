@@ -34,7 +34,7 @@ public class JavaObjectToJsonDemo {
 		customerDetailsList.add(customerDetails1);
 		
 		
-		request.setCustomerDetails(customerDetailsList);
+		//request.setCustomerDetails(customerDetailsList);
 		
 		
 		ObjectMapper mapper = new ObjectMapper();

@@ -66,8 +66,6 @@ public class PaymentServiceImpl implements IPaymentService {
 
 		if (financialReSponse != null) {
 
-			// invoke parellel calls and get the response
-
 			kafakaPublisher.paymentStatus(message);
 
 			daoResponse = paymentDao.paymentStatusUpdate(paymentDaoRequest);
@@ -76,7 +74,7 @@ public class PaymentServiceImpl implements IPaymentService {
 
 		
 
-		return responseBuilder.buildPaymentResponse(daoResponse, financialReSponse);;
+		return responseBuilder.buildPaymentResponse(daoResponse, financialReSponse);
 	}
 
 }

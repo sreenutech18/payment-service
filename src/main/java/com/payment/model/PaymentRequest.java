@@ -15,7 +15,7 @@ import lombok.Data;
 @Data
 public class PaymentRequest {
 	
-	private List<CustomerDetails> customerDetails;
+	private CustomerDetails customerDetails;
 	
 	
 	

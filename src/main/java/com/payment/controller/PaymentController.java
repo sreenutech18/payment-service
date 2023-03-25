@@ -15,6 +15,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.multipart.MultipartFile;
 
+import com.payment.exception.PaymentRequestInvalidException;
 import com.payment.model.PaymentRequest;
 import com.payment.model.PaymentResponse;
 import com.payment.service.IPaymentService;
@@ -42,7 +43,7 @@ public class PaymentController {
 	public PaymentResponse doPayments(@RequestBody PaymentRequest paymentRequest,
 									@Validated @RequestHeader("client-id") String clientId,
 									@Validated @RequestHeader("requestId") String requestId,
-									@Validated @RequestHeader("messageTS") String messageTS) {
+									@Validated @RequestHeader("messageTS") String messageTS) throws PaymentRequestInvalidException {
 		
 		//1. validate the request
 		
