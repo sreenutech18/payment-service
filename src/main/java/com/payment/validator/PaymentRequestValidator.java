@@ -24,7 +24,7 @@ public class PaymentRequestValidator {
 			throw new PaymentServiceException("ps001", "invalid request object");
 		}
 
-		 if(paymentRequest.getCardNumber() != null ){
+		 if(paymentRequest.getCardNumber() != null || " ".equals(paymentRequest.getCardNumber()) ){
 		
 			throw new PaymentServiceException("ps002", "invalid cardnumber");
 		}		
