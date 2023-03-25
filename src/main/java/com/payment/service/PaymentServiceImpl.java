@@ -74,9 +74,9 @@ public class PaymentServiceImpl implements IPaymentService {
 
 		}
 
-		PaymentResponse paymentResp = responseBuilder.buildPaymentResponse(daoResponse, financialReSponse);
+		
 
-		return paymentResp;
+		return responseBuilder.buildPaymentResponse(daoResponse, financialReSponse);;
 	}
 
 }
