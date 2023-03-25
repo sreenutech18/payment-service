@@ -30,7 +30,6 @@ public class RespJavaObjectTOJsonDemo {
 		
 		paymentStatusList.add(paymentStatus);
 		paymentStatusList.add(paymentStatus1);
-		paymentStatusList.add(paymentStatus2);
 		
 		
 		
