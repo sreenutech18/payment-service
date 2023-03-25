@@ -15,9 +15,7 @@ public class PaymentKafkaPublisher {
 	
 	public void paymentStatus(String message) {
 		
-		//TODO : Need to write the kafka client code to publish the message into 
 		
-		//kafka server
 		
 		
 	}

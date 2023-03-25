@@ -3,13 +3,11 @@
  */
 package com.payment.exception;
 
-import lombok.Data;
-
 /**
  * @author sreenu,09-Apr-2022
  * Description :
  */
-@Data
+
 public class BusinessException extends Exception{
 	
 	private String respCode;
@@ -22,7 +20,7 @@ public class BusinessException extends Exception{
 	}
 	
 	
-	public BusinessException(String respCode, String respMsg) {
+	
 
 	public BusinessException(String respCode, String respMsg,String errorCode) {
 		this.respCode = respCode;

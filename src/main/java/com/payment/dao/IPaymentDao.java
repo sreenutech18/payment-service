@@ -6,10 +6,7 @@ package com.payment.dao;
 import com.payment.model.PaymentDaoRequest;
 import com.payment.model.PaymentDaoResponse;
 
-/**
- * @author sreenu,08-Apr-2022
- * Description :
- */
+
 public interface IPaymentDao {
 	
 	PaymentDaoResponse paymentStatusUpdate(PaymentDaoRequest daoRequest);

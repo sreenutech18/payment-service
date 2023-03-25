@@ -80,11 +80,10 @@ public class PaymentController {
 	public String paymentStatus(@PathVariable("mobileNum") String mobileNum, 
 								@PathVariable("paymentdate") String paymentDate) {
 		
-		String status = null;
 		
 			
 		
-		return status;
+		return null;
 	
 		
 	}
