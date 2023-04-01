@@ -67,9 +67,7 @@ public class PaymentController {
 	@RequestMapping(value="/upload", method=RequestMethod.POST, produces = "application/json", consumes = "application/json")
 	public PaymentResponse payments(@RequestParam("file") MultipartFile file) {
 		
-		//1. got the file from consumer/client
-		//2. parse/read the file and read line by line from file, split the file into multiple records
-		//3. prepare the java object
+		
 		
 		PaymentResponse response = new PaymentResponse();
 		
@@ -87,7 +85,7 @@ public class PaymentController {
 		
 			
 		
-		return null;
+		return "success";
 	
 		
 	}
