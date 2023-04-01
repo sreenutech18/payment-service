@@ -40,13 +40,6 @@ public class PaymentRequestBuilder {
 		return null;
 	}
 
-	/**
-	 * @param financialReSponse
-	 * @return
-	 */
-	public PaymentDaoRequest buildDaoRequest(FinancialServiceResponse financialReSponse) {
-		// TODO : prepare the dao request with the help of Finance Service
-		return null;
-	}
+	
 
 }
