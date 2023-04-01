@@ -16,13 +16,20 @@ public class PaymentDaoImpl implements IPaymentDao {
 	@Override
 	public PaymentDaoResponse paymentStatusUpdate(PaymentDaoRequest daoRequest) {
 		
+  	PaymentDaoResponse response = null;
+		String dbResponseCode = "0";
+		String dbResponseMsg = "success";
 		
-		PaymentDaoResponse daoResponse = new PaymentDaoResponse();
+		if( "0".equals(dbResponseCode)){
+			
+			response = new PaymentDaoResponse();
+			response.setResponseCode("0");
+			response.setResponseMsg("sucess");
+		}
 		
-		daoResponse.setResponseCode("0");
-		daoResponse.setResponseMsg("success");
-		
-		return daoResponse;
+	
+	return response;
+
 	}
 
 }
