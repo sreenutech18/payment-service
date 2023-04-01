@@ -18,7 +18,7 @@ public class PaymentResponseBuilder {
 	
 	public PaymentResponse buildPaymentResponse(PaymentDaoResponse daoResponse, FinancialServiceResponse finResp){
 		
-		//TODO : Prepare the final PaymentResponse
+		
 		
 		return null;
 		
