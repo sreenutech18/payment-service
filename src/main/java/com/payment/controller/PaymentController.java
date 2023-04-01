@@ -44,7 +44,7 @@ public class PaymentController {
 									@Validated @RequestHeader("client-id") String clientId,
 									@Validated @RequestHeader("requestId") String requestId,
 									@Validated @RequestHeader("messageTS") String messageTS,
-									@Validated @RequestHeader("auth_token") String authToken) {
+									@Validated @RequestHeader("auth_token") String authToken) throws PaymentRequestInvalidException {
 
 		
 		//1. validate the request
@@ -87,7 +87,7 @@ public class PaymentController {
 		
 			
 		
-		return null;
+		return "success";
 	
 		
 	}
