@@ -43,7 +43,9 @@ public class PaymentController {
 	public PaymentResponse doPayments(@RequestBody PaymentRequest paymentRequest,
 									@Validated @RequestHeader("client-id") String clientId,
 									@Validated @RequestHeader("requestId") String requestId,
-									@Validated @RequestHeader("messageTS") String messageTS) throws PaymentRequestInvalidException {
+									@Validated @RequestHeader("messageTS") String messageTS,
+									@Validated @RequestHeader("auth_token") String authToken) {
+
 		
 		//1. validate the request
 		
@@ -58,7 +60,7 @@ public class PaymentController {
 		//4. prepare the response and send to consumer/client
 		
 		
-		return null;
+		return response;
 	}
 	
 	@ResponseBody
@@ -69,8 +71,9 @@ public class PaymentController {
 		//2. parse/read the file and read line by line from file, split the file into multiple records
 		//3. prepare the java object
 		
+		PaymentResponse response = new PaymentResponse();
 		
-		return null;
+		return response;
 		
 		
 	}
