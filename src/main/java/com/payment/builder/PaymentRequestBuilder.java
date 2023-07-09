@@ -23,6 +23,7 @@ public class PaymentRequestBuilder {
 		
 		//TODO : Prepare FinancialServiceRequest with the help of PaymentRequest
 		
+		FinancialServiceRequest requestBuilder = new FinancialServiceRequest();
 		
 		return null;
 		
