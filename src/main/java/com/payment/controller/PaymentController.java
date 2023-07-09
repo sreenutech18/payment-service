@@ -39,7 +39,7 @@ public class PaymentController {
 	
 	
 	@ResponseBody
-	@RequestMapping(value="/payments", method=RequestMethod.POST, produces = "application/json", consumes = "application/json")
+	@RequestMapping(value="/payments", method=RequestMethod.POST, produces = {"application/json","application/xml", consumes = "application/json")
 	public PaymentResponse doPayments(@RequestBody PaymentRequest paymentRequest,
 									@Validated @RequestHeader("client-id") String clientId,
 									@Validated @RequestHeader("requestId") String requestId,
