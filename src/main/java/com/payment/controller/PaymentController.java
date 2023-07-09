@@ -23,7 +23,7 @@ import com.payment.validator.PaymentRequestValidator;
 
 /**
  * @author sreenu,08-Apr-2022
- * Description :
+ * Description : This class is used to provide the payment details
  */
 
 @RestController
