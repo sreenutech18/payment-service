@@ -24,7 +24,7 @@ public class PaymentDaoImpl implements IPaymentDao {
 			
 			response = new PaymentDaoResponse();
 			response.setResponseCode("0");
-			response.setResponseMsg("sucess");
+			response.setResponseCode("success");
 		}
 		
 	
